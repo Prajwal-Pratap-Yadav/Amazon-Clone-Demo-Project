@@ -1,0 +1,21 @@
+{
+  "name": "everyday-storefront",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@axe-core/playwright": "4.13.0",
+    "lighthouse": "13.5.0",
+    "chrome-launcher": "1.2.1"
+  },
+  "version": "0.1.0",
+  "description": "An educational storefront study with reproducible browser quality measurements",
+  "license": "MIT",
+  "author": {
+    "name": "Prajwal Pratap Yadav",
+    "email": "prajwalpratapyadav5@gmail.com"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}
