@@ -19,7 +19,8 @@ try {
     desktop: { width: 1440, height: 1000 },
     mobile: { width: 390, height: 844 },
   })) {
-    const page = await browser.newPage({ viewport, reducedMotion: 'reduce' });
+    const context = await browser.newContext({ viewport, reducedMotion: 'reduce' });
+    const page = await context.newPage();
     const consoleErrors = [];
     const failedRequests = [];
     page.on('console', message => { if (message.type() === 'error') consoleErrors.push(message.text()); });
@@ -34,7 +35,7 @@ try {
       viewport,
       horizontalOverflow: await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth),
     };
-    await page.close();
+    await context.close();
   }
 } finally {
   await browser.close();
