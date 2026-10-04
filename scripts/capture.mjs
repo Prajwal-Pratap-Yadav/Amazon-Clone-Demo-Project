@@ -21,6 +21,9 @@ try {
     }
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.getByRole('button', { name: 'Add Grid notebook to cart' }).click();
+    // A full-page shot starts from the top so fixed skip navigation stays outside its unfocused viewport.
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.waitForFunction(() => window.scrollY === 0);
     await page.screenshot({
       path: path.join(destination, `${profile}-catalog.png`),
       fullPage: true,
