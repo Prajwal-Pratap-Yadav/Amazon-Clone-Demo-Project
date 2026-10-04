@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: staged-gitleaks
+        name: Scan staged changes for secrets
+        language: system
+        entry: .tools/gitleaks git --pre-commit --staged --redact
+        pass_filenames: false

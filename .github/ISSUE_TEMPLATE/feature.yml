@@ -1,0 +1,15 @@
+name: Scoped improvement
+description: Suggest a testable educational storefront improvement.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria and validation
+    validations:
+      required: true

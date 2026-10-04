@@ -1,0 +1,51 @@
+{
+  "runtime": {
+    "sourceSha": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+    "cloneSeconds": 8.39214190000007,
+    "setupSeconds": 10.521296901999904,
+    "serverSeconds": 0.39167328700000326,
+    "totalSeconds": 19.305112088999977,
+    "runtimePassed": true,
+    "cache": "Empty npm cache and new node_modules; network/proxy caches not controlled.",
+    "scope": "One Linux container, Node 24.19.0, npm 11.9.0; actual page/module HTTP smoke. Browser behavior is separately checked in GitHub CI.",
+    "dateUtc": "2026-10-04",
+    "environment": {
+      "os": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+      "node": "24.19.0",
+      "npm": "11.9.0"
+    }
+  },
+  "manualReview": {
+    "reviewedSourceSha": "66f045c6232cc34d1c34e953722c8434067c20f0",
+    "dateUtc": "2026-10-04T01:05:30.029407+00:00",
+    "freshCloneReview": true,
+    "tenSecondGate": {
+      "assessment": "Self-review pass: title, concise value, badges and real running-page hero are visible together.",
+      "externalReaderStudy": false
+    },
+    "fiveMinuteGate": {
+      "assessment": "Self-review pass: pure logic, real behavior tests, locked tools, preservation, evidence, ADRs and granular owner history are inspectable.",
+      "externalHiringReview": false
+    },
+    "githubRendering": {
+      "hero": "Observed actual image rendered.",
+      "mermaid": "Observed diagram rendered with all six labeled nodes.",
+      "badges": "All four images rendered; CI currently says no status because main has not received the workflow yet. Verify its successful status after merge."
+    },
+    "makeRun": "Actual documented wrapper served the page in the runtime-only checkout.",
+    "makeDocs": "Passed on the fresh updated clone.",
+    "makeClean": "Passed; committed measurements, tools and source retained.",
+    "cleanWorkingTree": true,
+    "runtimeSourceUnchanged": "Only capture and documentation/automation changed after the timed runtime source; no changed application/lockfile.",
+    "remainingLimits": [
+      "Chromium-only browser verification.",
+      "Full screen-reader/manual WCAG review is roadmap work.",
+      "Pages activation and final main CI/release still pending."
+    ]
+  },
+  "limits": [
+    "Single observed quickstart; network/proxy caches uncontrolled.",
+    "Chromium automation and self-review do not establish full WCAG conformance."
+  ]
+}

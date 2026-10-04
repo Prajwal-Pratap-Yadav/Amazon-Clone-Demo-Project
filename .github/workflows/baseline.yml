@@ -1,0 +1,67 @@
+name: Capture original storefront baseline
+on:
+  push:
+    branches: [portfolio-overhaul]
+    paths: ['scripts/audit.mjs', 'package-lock.json', '.github/workflows/baseline.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: original-storefront-baseline
+  cancel-in-progress: false
+jobs:
+  baseline:
+    if: github.repository == 'Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project' && github.ref == 'refs/heads/portfolio-overhaul'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+      - id: existing
+        run: |
+          if test -f reports/baseline/manifest.json; then
+            echo 'present=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'present=false' >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        if: steps.existing.outputs.present == 'false'
+        with:
+          node-version: '24.19.0'
+          cache: npm
+      - if: steps.existing.outputs.present == 'false'
+        run: npm ci --ignore-scripts
+      - if: steps.existing.outputs.present == 'false'
+        run: npx playwright install --with-deps chromium --no-shell
+      - if: steps.existing.outputs.present == 'false'
+        name: Audit unchanged original UI
+        run: |
+          set -euo pipefail
+          git diff c8f0e99961b4648f9ea62c0e81070fd2ce3137ac -- index.html style.css 'Amazon Clone Pictures/' --exit-code
+          python -m http.server 4180 --bind 127.0.0.1 > /tmp/storefront-baseline-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" || true' EXIT
+          node scripts/audit.mjs http://127.0.0.1:4180 reports/baseline "$GITHUB_SHA"
+      - if: steps.existing.outputs.present == 'false'
+        name: Verify history and generated files before publication
+        run: |
+          python scripts/install_gitleaks.py
+          .tools/gitleaks git --log-opts=--all --redact
+          .tools/gitleaks dir reports/baseline --redact
+      - if: steps.existing.outputs.present == 'false'
+        name: Preserve actual measured baseline on the reviewed branch
+        run: |
+          set -euo pipefail
+          write_ok() { test "$GITHUB_REPOSITORY" = 'Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project'; test "$GITHUB_REF" = 'refs/heads/portfolio-overhaul'; }
+          write_ok
+          test "$(git ls-remote origin refs/heads/portfolio-overhaul | cut -f1)" = "$GITHUB_SHA"
+          git config user.name 'Prajwal Pratap Yadav'
+          git config user.email 'prajwalpratapyadav5@gmail.com'
+          git status --short
+          git add reports/baseline
+          git diff --cached --stat
+          git commit -m 'test: preserve measured original storefront baseline'
+          test "$(git show -s --format='%an <%ae> | %cn <%ce>')" = 'Prajwal Pratap Yadav <prajwalpratapyadav5@gmail.com> | Prajwal Pratap Yadav <prajwalpratapyadav5@gmail.com>'
+          write_ok
+          git push origin HEAD:refs/heads/portfolio-overhaul
