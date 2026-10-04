@@ -18,24 +18,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-        "commitHash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-        "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166324004"
+        "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/1a902299b133797c3964a28374651cce533b67b0",
+        "commitHash": "1a902299b133797c3964a28374651cce533b67b0",
+        "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166644813"
       },
       "gitCommit": {
-        "shortHash": "5200411",
-        "hash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-        "subject": "fix: cycle modal keyboard focus across visible enabled controls",
-        "body": "fix: cycle modal keyboard focus across visible enabled controls",
+        "shortHash": "1a90229",
+        "hash": "1a902299b133797c3964a28374651cce533b67b0",
+        "subject": "test: capture full catalog from its initial scroll position",
+        "body": "test: capture full catalog from its initial scroll position",
         "author": {
           "name": "Prajwal Pratap Yadav",
           "email": "prajwalpratapyadav5@gmail.com",
-          "time": 1791075198000
+          "time": 1791075589000
         },
         "committer": {
           "name": "Prajwal Pratap Yadav",
           "email": "prajwalpratapyadav5@gmail.com",
-          "time": 1791075198000
+          "time": 1791075589000
         },
         "branch": "portfolio-overhaul"
       },
@@ -49,24 +49,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-            "commitHash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-            "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166324004"
+            "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/1a902299b133797c3964a28374651cce533b67b0",
+            "commitHash": "1a902299b133797c3964a28374651cce533b67b0",
+            "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166644813"
           },
           "gitCommit": {
-            "shortHash": "5200411",
-            "hash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-            "subject": "fix: cycle modal keyboard focus across visible enabled controls",
-            "body": "fix: cycle modal keyboard focus across visible enabled controls",
+            "shortHash": "1a90229",
+            "hash": "1a902299b133797c3964a28374651cce533b67b0",
+            "subject": "test: capture full catalog from its initial scroll position",
+            "body": "test: capture full catalog from its initial scroll position",
             "author": {
               "name": "Prajwal Pratap Yadav",
               "email": "prajwalpratapyadav5@gmail.com",
-              "time": 1791075198000
+              "time": 1791075589000
             },
             "committer": {
               "name": "Prajwal Pratap Yadav",
               "email": "prajwalpratapyadav5@gmail.com",
-              "time": 1791075198000
+              "time": 1791075589000
             },
             "branch": "portfolio-overhaul"
           },
@@ -87,24 +87,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-            "commitHash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-            "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166324004"
+            "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/1a902299b133797c3964a28374651cce533b67b0",
+            "commitHash": "1a902299b133797c3964a28374651cce533b67b0",
+            "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166644813"
           },
           "gitCommit": {
-            "shortHash": "5200411",
-            "hash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-            "subject": "fix: cycle modal keyboard focus across visible enabled controls",
-            "body": "fix: cycle modal keyboard focus across visible enabled controls",
+            "shortHash": "1a90229",
+            "hash": "1a902299b133797c3964a28374651cce533b67b0",
+            "subject": "test: capture full catalog from its initial scroll position",
+            "body": "test: capture full catalog from its initial scroll position",
             "author": {
               "name": "Prajwal Pratap Yadav",
               "email": "prajwalpratapyadav5@gmail.com",
-              "time": 1791075198000
+              "time": 1791075589000
             },
             "committer": {
               "name": "Prajwal Pratap Yadav",
               "email": "prajwalpratapyadav5@gmail.com",
-              "time": 1791075198000
+              "time": 1791075589000
             },
             "branch": "portfolio-overhaul"
           },
@@ -125,24 +125,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-            "commitHash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-            "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166324004"
+            "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/1a902299b133797c3964a28374651cce533b67b0",
+            "commitHash": "1a902299b133797c3964a28374651cce533b67b0",
+            "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166644813"
           },
           "gitCommit": {
-            "shortHash": "5200411",
-            "hash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
-            "subject": "fix: cycle modal keyboard focus across visible enabled controls",
-            "body": "fix: cycle modal keyboard focus across visible enabled controls",
+            "shortHash": "1a90229",
+            "hash": "1a902299b133797c3964a28374651cce533b67b0",
+            "subject": "test: capture full catalog from its initial scroll position",
+            "body": "test: capture full catalog from its initial scroll position",
             "author": {
               "name": "Prajwal Pratap Yadav",
               "email": "prajwalpratapyadav5@gmail.com",
-              "time": 1791075198000
+              "time": 1791075589000
             },
             "committer": {
               "name": "Prajwal Pratap Yadav",
               "email": "prajwalpratapyadav5@gmail.com",
-              "time": 1791075198000
+              "time": 1791075589000
             },
             "branch": "portfolio-overhaul"
           },
@@ -211,12 +211,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1296,
+                  "duration": 1096,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:44.897Z",
+                  "startTime": "2026-10-04T01:00:33.732Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -245,12 +245,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1557,
+                  "duration": 1481,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:46.755Z",
+                  "startTime": "2026-10-04T01:00:35.549Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -279,12 +279,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1077,
+                  "duration": 986,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:48.360Z",
+                  "startTime": "2026-10-04T01:00:37.052Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -313,12 +313,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1105,
+                  "duration": 977,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:49.491Z",
+                  "startTime": "2026-10-04T01:00:38.063Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -347,12 +347,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3406,
+                  "duration": 3253,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:50.647Z",
+                  "startTime": "2026-10-04T01:00:39.091Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -381,12 +381,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1549,
+                  "duration": 1400,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:54.126Z",
+                  "startTime": "2026-10-04T01:00:42.374Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -415,12 +415,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1153,
+                  "duration": 870,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:55.723Z",
+                  "startTime": "2026-10-04T01:00:43.795Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -449,12 +449,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1173,
+                  "duration": 1325,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:56.930Z",
+                  "startTime": "2026-10-04T01:00:44.717Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -483,12 +483,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1222,
+                  "duration": 1152,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:44.956Z",
+                  "startTime": "2026-10-04T01:00:33.758Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -517,12 +517,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1590,
+                  "duration": 1506,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:46.678Z",
+                  "startTime": "2026-10-04T01:00:35.571Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -551,12 +551,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 958,
+                  "duration": 1164,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:48.298Z",
+                  "startTime": "2026-10-04T01:00:37.112Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -585,12 +585,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1022,
+                  "duration": 998,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:49.291Z",
+                  "startTime": "2026-10-04T01:00:38.323Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -619,12 +619,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 3369,
+                  "duration": 3386,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:50.360Z",
+                  "startTime": "2026-10-04T01:00:39.371Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -653,12 +653,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1543,
+                  "duration": 1449,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:53.772Z",
+                  "startTime": "2026-10-04T01:00:42.810Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -687,12 +687,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 989,
+                  "duration": 943,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:55.353Z",
+                  "startTime": "2026-10-04T01:00:44.301Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -721,12 +721,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1303,
+                  "duration": 1402,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:56.366Z",
+                  "startTime": "2026-10-04T01:00:45.293Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -753,14 +753,14 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 654,
+                  "duration": 673,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:58.499Z",
+                  "startTime": "2026-10-04T01:00:46.856Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -787,14 +787,14 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 885,
+                  "duration": 805,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:54:59.362Z",
+                  "startTime": "2026-10-04T01:00:47.725Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -821,14 +821,14 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 555,
+                  "duration": 542,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:55:00.268Z",
+                  "startTime": "2026-10-04T01:00:48.548Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -855,14 +855,14 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 541,
+                  "duration": 540,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:55:00.845Z",
+                  "startTime": "2026-10-04T01:00:49.111Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -889,14 +889,14 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2224,
+                  "duration": 2088,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:55:01.409Z",
+                  "startTime": "2026-10-04T01:00:49.675Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -923,14 +923,14 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 998,
+                  "duration": 959,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:55:03.652Z",
+                  "startTime": "2026-10-04T01:00:51.788Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -957,14 +957,14 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 599,
+                  "duration": 524,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:55:04.672Z",
+                  "startTime": "2026-10-04T01:00:52.766Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -991,14 +991,14 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 694,
+                  "duration": 669,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-04T00:55:05.289Z",
+                  "startTime": "2026-10-04T01:00:53.313Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1016,8 +1016,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-04T00:54:43.715Z",
-    "duration": 22399.89,
+    "startTime": "2026-10-04T01:00:32.713Z",
+    "duration": 21388.096,
     "expected": 24,
     "skipped": 0,
     "unexpected": 0,
