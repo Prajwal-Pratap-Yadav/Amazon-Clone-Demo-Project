@@ -209,6 +209,26 @@ cartButton.addEventListener('click', () => {
   dialog.showModal();
 });
 required<HTMLButtonElement>('#close-cart').addEventListener('click', () => dialog.close());
+// Keep sequential Tab navigation on the dialog's visible enabled controls.
+// Native modal inertness and Escape behavior remain provided by <dialog>.
+dialog.addEventListener('keydown', (event) => {
+  if (event.key !== 'Tab') return;
+  const controls = [
+    ...dialog.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), input:not([disabled]), select:not([disabled]), a[href], [tabindex="0"]',
+    ),
+  ].filter((node) => node.getClientRects().length > 0);
+  const first = controls[0];
+  const last = controls.at(-1);
+  if (!first || !last) return;
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  }
+});
 checkoutButton.addEventListener('click', () => {
   required('#cart-view').hidden = true;
   form.hidden = false;

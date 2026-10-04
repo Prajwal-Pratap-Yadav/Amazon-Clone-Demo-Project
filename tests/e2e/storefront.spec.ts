@@ -71,6 +71,12 @@ test('supports native keyboard modal focus and Escape return', async ({ page }) 
   ).toBe(true);
   await page.keyboard.press('Escape');
   await expect(cart).toBeFocused();
+  await page.getByRole('button', { name: 'Add Grid notebook to cart' }).click();
+  await page.getByRole('button', { name: 'Open cart, 1 items' }).click();
+  await page.keyboard.press('Shift+Tab');
+  await expect(page.getByRole('button', { name: /Continue to demo checkout/ })).toBeFocused();
+  await page.keyboard.press('Tab');
+  await expect(page.getByRole('button', { name: 'Close cart' })).toBeFocused();
 });
 test('has no serious or critical WCAG axe violations in catalog cart and checkout', async ({
   page,
