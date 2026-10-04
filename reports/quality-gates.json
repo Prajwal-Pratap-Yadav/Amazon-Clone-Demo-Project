@@ -1,0 +1,21 @@
+{
+  "runtime": {
+    "sourceSha": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+    "cloneSeconds": 8.39214190000007,
+    "setupSeconds": 10.521296901999904,
+    "serverSeconds": 0.39167328700000326,
+    "totalSeconds": 19.305112088999977,
+    "runtimePassed": true,
+    "cache": "Empty npm cache and new node_modules; network/proxy caches not controlled.",
+    "scope": "One Linux container, Node 24.19.0, npm 11.9.0; actual page/module HTTP smoke. Browser behavior is separately checked in GitHub CI.",
+    "dateUtc": "2026-10-04"
+  },
+  "manualReview": {
+    "status": "pending final published documentation review",
+    "externalReaderStudy": false
+  },
+  "limits": [
+    "Single observed quickstart; network/proxy caches uncontrolled.",
+    "Chromium automation and self-review do not establish full WCAG conformance."
+  ]
+}

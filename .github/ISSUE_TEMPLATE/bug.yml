@@ -1,0 +1,22 @@
+name: Reproducible defect
+description: Report a storefront or developer workflow failure.
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps and expected behavior
+      description: Use fictional details; do not include secrets or personal data.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Version, OS and browser
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior and relevant evidence
+    validations:
+      required: true
