@@ -17,11 +17,7 @@ try {
     await page.goto(url, { waitUntil: 'networkidle' });
     for (const image of await page.locator('main img').all()) {
       await image.scrollIntoViewIfNeeded();
-      await image.evaluate(async (node) => {
-        const img = node;
-        if (!img.complete)
-          await new Promise((resolve) => img.addEventListener('load', resolve, { once: true }));
-      });
+      await image.evaluate((node) => node.decode());
     }
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.getByRole('button', { name: 'Add Grid notebook to cart' }).click();
