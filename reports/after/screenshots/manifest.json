@@ -1,0 +1,8 @@
+{
+  "url": "http://127.0.0.1:4173/Amazon-Clone-Demo-Project/",
+  "sourceSha": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+  "dateUtc": "2026-10-04T00:56:30.368Z",
+  "chromeVersion": "153.0.8010.12",
+  "command": "node scripts/capture.mjs URL OUTPUT SOURCE_SHA",
+  "scope": "Actual local Chromium capture of synthetic products; no live commerce."
+}

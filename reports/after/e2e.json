@@ -1,0 +1,1026 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+      "/home/runner/work/Amazon-Clone-Demo-Project/Amazon-Clone-Demo-Project/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/runner/work/Amazon-Clone-Demo-Project/Amazon-Clone-Demo-Project/playwright.config.ts",
+    "rootDir": "/home/runner/work/Amazon-Clone-Demo-Project/Amazon-Clone-Demo-Project/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+        "commitHash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+        "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166324004"
+      },
+      "gitCommit": {
+        "shortHash": "5200411",
+        "hash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+        "subject": "fix: cycle modal keyboard focus across visible enabled controls",
+        "body": "fix: cycle modal keyboard focus across visible enabled controls",
+        "author": {
+          "name": "Prajwal Pratap Yadav",
+          "email": "prajwalpratapyadav5@gmail.com",
+          "time": 1791075198000
+        },
+        "committer": {
+          "name": "Prajwal Pratap Yadav",
+          "email": "prajwalpratapyadav5@gmail.com",
+          "time": 1791075198000
+        },
+        "branch": "portfolio-overhaul"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/Amazon-Clone-Demo-Project/Amazon-Clone-Demo-Project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+            "commitHash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+            "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166324004"
+          },
+          "gitCommit": {
+            "shortHash": "5200411",
+            "hash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+            "subject": "fix: cycle modal keyboard focus across visible enabled controls",
+            "body": "fix: cycle modal keyboard focus across visible enabled controls",
+            "author": {
+              "name": "Prajwal Pratap Yadav",
+              "email": "prajwalpratapyadav5@gmail.com",
+              "time": 1791075198000
+            },
+            "committer": {
+              "name": "Prajwal Pratap Yadav",
+              "email": "prajwalpratapyadav5@gmail.com",
+              "time": 1791075198000
+            },
+            "branch": "portfolio-overhaul"
+          },
+          "actualWorkers": 2
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/home/runner/work/Amazon-Clone-Demo-Project/Amazon-Clone-Demo-Project/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/Amazon-Clone-Demo-Project/Amazon-Clone-Demo-Project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+            "commitHash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+            "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166324004"
+          },
+          "gitCommit": {
+            "shortHash": "5200411",
+            "hash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+            "subject": "fix: cycle modal keyboard focus across visible enabled controls",
+            "body": "fix: cycle modal keyboard focus across visible enabled controls",
+            "author": {
+              "name": "Prajwal Pratap Yadav",
+              "email": "prajwalpratapyadav5@gmail.com",
+              "time": 1791075198000
+            },
+            "committer": {
+              "name": "Prajwal Pratap Yadav",
+              "email": "prajwalpratapyadav5@gmail.com",
+              "time": 1791075198000
+            },
+            "branch": "portfolio-overhaul"
+          },
+          "actualWorkers": 2
+        },
+        "id": "tablet",
+        "name": "tablet",
+        "testDir": "/home/runner/work/Amazon-Clone-Demo-Project/Amazon-Clone-Demo-Project/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/Amazon-Clone-Demo-Project/Amazon-Clone-Demo-Project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/commit/52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+            "commitHash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+            "buildHref": "https://github.com/Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project/actions/runs/37166324004"
+          },
+          "gitCommit": {
+            "shortHash": "5200411",
+            "hash": "52004111e4a5f1aa7cad1ff7ba451b962fa713e1",
+            "subject": "fix: cycle modal keyboard focus across visible enabled controls",
+            "body": "fix: cycle modal keyboard focus across visible enabled controls",
+            "author": {
+              "name": "Prajwal Pratap Yadav",
+              "email": "prajwalpratapyadav5@gmail.com",
+              "time": 1791075198000
+            },
+            "committer": {
+              "name": "Prajwal Pratap Yadav",
+              "email": "prajwalpratapyadav5@gmail.com",
+              "time": 1791075198000
+            },
+            "branch": "portfolio-overhaul"
+          },
+          "actualWorkers": 2
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/home/runner/work/Amazon-Clone-Demo-Project/Amazon-Clone-Demo-Project/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/local/e2e.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run preview",
+      "url": "http://127.0.0.1:4173/Amazon-Clone-Demo-Project/",
+      "reuseExistingServer": false,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "storefront.spec.ts",
+      "file": "storefront.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "combines search category and price sort and resets empty results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1296,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:44.897Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-7487f96200ae7a307267",
+          "file": "storefront.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "persists a cart changes integer totals and validates simulated checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1557,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:46.755Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-fd013e2ea403b744d848",
+          "file": "storefront.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "rejects invalid quantities and removes lines without losing modal focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1077,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:48.360Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-9d3bffbf61d403dd087e",
+          "file": "storefront.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "supports native keyboard modal focus and Escape return",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1105,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:49.491Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-66f12a646c3a20d222c8",
+          "file": "storefront.spec.ts",
+          "line": 61,
+          "column": 1
+        },
+        {
+          "title": "has no serious or critical WCAG axe violations in catalog cart and checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3406,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:50.647Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-34a6b4c6d4884102df3a",
+          "file": "storefront.spec.ts",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "fits a narrow viewport and loads all local illustrations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1549,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:54.126Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-09e0aae218ea689092a5",
+          "file": "storefront.spec.ts",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "continues in memory when storage is blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1153,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:55.723Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-993190cfc58e2e6e80c3",
+          "file": "storefront.spec.ts",
+          "line": 116,
+          "column": 1
+        },
+        {
+          "title": "recovers a tampered persisted cart and observes other tab clearing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1173,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:56.930Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-441e9a3a4bb7700c5baa",
+          "file": "storefront.spec.ts",
+          "line": 130,
+          "column": 1
+        },
+        {
+          "title": "combines search category and price sort and resets empty results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "tablet",
+              "projectName": "tablet",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1222,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:44.956Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-4ea8d2b2b38679243dba",
+          "file": "storefront.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "persists a cart changes integer totals and validates simulated checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "tablet",
+              "projectName": "tablet",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1590,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:46.678Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-921ffb0a6ee84a5872c3",
+          "file": "storefront.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "rejects invalid quantities and removes lines without losing modal focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "tablet",
+              "projectName": "tablet",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:48.298Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-8101392a9ea78e5e0d5e",
+          "file": "storefront.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "supports native keyboard modal focus and Escape return",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "tablet",
+              "projectName": "tablet",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1022,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:49.291Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-93a76c11a0b1d2cecf96",
+          "file": "storefront.spec.ts",
+          "line": 61,
+          "column": 1
+        },
+        {
+          "title": "has no serious or critical WCAG axe violations in catalog cart and checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "tablet",
+              "projectName": "tablet",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3369,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:50.360Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-4f5b49e3cfbd8d818657",
+          "file": "storefront.spec.ts",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "fits a narrow viewport and loads all local illustrations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "tablet",
+              "projectName": "tablet",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1543,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:53.772Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-53f93cc5222729a6649d",
+          "file": "storefront.spec.ts",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "continues in memory when storage is blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "tablet",
+              "projectName": "tablet",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 989,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:55.353Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-f79024a9d32d650b5bf7",
+          "file": "storefront.spec.ts",
+          "line": 116,
+          "column": 1
+        },
+        {
+          "title": "recovers a tampered persisted cart and observes other tab clearing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "tablet",
+              "projectName": "tablet",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1303,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:56.366Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-432a63a37c494dbd9ab6",
+          "file": "storefront.spec.ts",
+          "line": 130,
+          "column": 1
+        },
+        {
+          "title": "combines search category and price sort and resets empty results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 654,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:58.499Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-eb6e5d9ec1c6df9342e2",
+          "file": "storefront.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "persists a cart changes integer totals and validates simulated checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 885,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:54:59.362Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-06f4da8c474444cce4e0",
+          "file": "storefront.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "rejects invalid quantities and removes lines without losing modal focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 555,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:55:00.268Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-8d49e42764e177c13721",
+          "file": "storefront.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "supports native keyboard modal focus and Escape return",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 541,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:55:00.845Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-831489df02b41a060771",
+          "file": "storefront.spec.ts",
+          "line": 61,
+          "column": 1
+        },
+        {
+          "title": "has no serious or critical WCAG axe violations in catalog cart and checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:55:01.409Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-e37fb07d32a4034cce57",
+          "file": "storefront.spec.ts",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "fits a narrow viewport and loads all local illustrations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 998,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:55:03.652Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-72f6a994c82176aafafc",
+          "file": "storefront.spec.ts",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "continues in memory when storage is blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 599,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:55:04.672Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-f4f7cc30bb88effa2e43",
+          "file": "storefront.spec.ts",
+          "line": 116,
+          "column": 1
+        },
+        {
+          "title": "recovers a tampered persisted cart and observes other tab clearing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 694,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T00:55:05.289Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "972707a4d1c1162f8b74-7e005d8b0be8f02a1a94",
+          "file": "storefront.spec.ts",
+          "line": 130,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T00:54:43.715Z",
+    "duration": 22399.89,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
