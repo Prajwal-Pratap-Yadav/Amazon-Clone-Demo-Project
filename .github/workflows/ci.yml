@@ -1,0 +1,91 @@
+name: Storefront quality
+on:
+  push:
+    branches: [main, portfolio-overhaul]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: storefront-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24.19.0'
+          cache: npm
+      - run: make setup-ci lint typecheck test build docs
+      - run: npx playwright install --with-deps chromium --no-shell
+      - run: npm run test:e2e
+      - run: make reproduce
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        if: always()
+        with:
+          name: storefront-verification
+          path: reports/local/
+          if-no-files-found: error
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        if: failure()
+        with:
+          name: browser-failure-traces
+          path: test-results/
+  security:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24.19.0'
+          cache: npm
+      - run: make setup-ci security
+  evidence:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/portfolio-overhaul' && github.repository == 'Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project'
+    needs: [verify, security]
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
+        with:
+          name: storefront-verification
+          path: evidence-download
+      - name: Preserve actual measurements on the reviewed branch
+        run: |
+          set -euo pipefail
+          write_ok() { test "$GITHUB_REPOSITORY" = 'Prajwal-Pratap-Yadav/Amazon-Clone-Demo-Project'; test "$GITHUB_REF" = 'refs/heads/portfolio-overhaul'; }
+          write_ok
+          if test -f reports/after/audit/manifest.json; then
+            source_sha=$(python -c "import json; print(json.load(open('reports/after/audit/manifest.json'))['sourceSha'])")
+            if git diff "$source_sha" HEAD --quiet -- src public index.html package-lock.json scripts/audit.mjs scripts/capture.mjs scripts/reproduce.mjs configs tests playwright.config.ts; then
+              echo 'Application and browser suite unchanged; retain measured source.'
+              exit 0
+            fi
+          fi
+          test "$(git ls-remote origin refs/heads/portfolio-overhaul | cut -f1)" = "$GITHUB_SHA"
+          mkdir -p reports/after
+          cp -r evidence-download/reproduced/. reports/after/
+          cp evidence-download/e2e.json reports/after/e2e.json
+          cp evidence-download/unit.json reports/after/unit.json
+          python scripts/install_gitleaks.py
+          .tools/gitleaks dir reports/after --redact
+          git config user.name 'Prajwal Pratap Yadav'
+          git config user.email 'prajwalpratapyadav5@gmail.com'
+          git add reports/after
+          git commit -m 'test: preserve measured storefront quality and browser captures'
+          test "$(git show -s --format='%an <%ae> | %cn <%ce>')" = 'Prajwal Pratap Yadav <prajwalpratapyadav5@gmail.com> | Prajwal Pratap Yadav <prajwalpratapyadav5@gmail.com>'
+          write_ok
+          git push origin HEAD:refs/heads/portfolio-overhaul
