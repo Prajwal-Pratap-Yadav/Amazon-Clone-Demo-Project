@@ -11,6 +11,8 @@ A responsive educational store with a saved cart, simulated checkout, and reprod
 
 Actual Chromium capture from `scripts/capture.mjs`, with one synthetic notebook in the cart. [Mobile](reports/after/screenshots/mobile-catalog.png), [tablet cart](reports/after/screenshots/tablet-cart.png) and [checkout validation](reports/after/screenshots/mobile-checkout-error.png) show the same running app.
 
+**Review the project:** [code, tests, and evidence](docs/REVIEW_GUIDE.md).
+
 ## Why this matters
 
 - The original HTML/CSS study had broken image references, mobile overflow and presentational shopping controls.
