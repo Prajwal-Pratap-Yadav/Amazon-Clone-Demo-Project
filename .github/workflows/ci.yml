@@ -25,13 +25,13 @@ jobs:
       - run: npx playwright install --with-deps chromium --no-shell
       - run: npm run test:e2e
       - run: make reproduce
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         if: always()
         with:
           name: storefront-verification
           path: reports/local/
           if-no-files-found: error
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         if: failure()
         with:
           name: browser-failure-traces
@@ -223,7 +223,7 @@ jobs:
       - uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
         if: steps.activation.outputs.ready == 'true'
         id: deployment
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         if: always()
         with:
           name: pages-activation-status
