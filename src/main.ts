@@ -47,15 +47,18 @@ function announce(text: string) {
   required('#status').textContent = text;
   if (dialog.open) required('#cart-status').textContent = text;
 }
+function updateStorageNote() {
+  required('#storage-note').textContent = storageAvailable
+    ? 'Your demo cart is saved on this browser. No checkout details are saved.'
+    : 'Browser storage is unavailable. Your demo cart lasts until this page closes.';
+}
 function persist() {
   try {
     localStorage.setItem(STORAGE_KEY, serializeCart(cart));
   } catch {
     storageAvailable = false;
   }
-  required('#storage-note').textContent = storageAvailable
-    ? 'Your demo cart is saved on this browser. No checkout details are saved.'
-    : 'Browser storage is unavailable. Your demo cart lasts until this page closes.';
+  updateStorageNote();
 }
 function renderCatalog() {
   const visible = selectProducts(products, query);
@@ -152,17 +155,20 @@ function renderCart() {
       .find((node) => node.dataset.focus === focus)
       ?.focus();
 }
-function changeCart(action: CartAction) {
-  cart = reduceCart(cart, action);
-  persist();
-  renderCart();
-  // Update state without replacing the keyboard user's catalog control.
+function updateCatalogCartControls() {
+  // Local and cross-tab updates preserve the keyboard user's catalog control.
   for (const button of grid.querySelectorAll<HTMLButtonElement>('button[data-id]')) {
     const wasFocused = document.activeElement === button;
     button.disabled = (cart[button.dataset.id ?? ''] ?? 0) >= MAX_QUANTITY;
     button.textContent = button.disabled ? 'Limit reached' : 'Add +';
     if (button.disabled && wasFocused) cartButton.focus();
   }
+}
+function changeCart(action: CartAction) {
+  cart = reduceCart(cart, action);
+  persist();
+  renderCart();
+  updateCatalogCartControls();
 }
 function updateQuery() {
   query = {
@@ -235,12 +241,13 @@ checkoutButton.addEventListener('click', () => {
   required('#dialog-title').textContent = 'Demo checkout';
   required<HTMLInputElement>('#demo-name').focus();
 });
-required<HTMLButtonElement>('#back-to-cart').addEventListener('click', () => {
+function showCartReview() {
   form.hidden = true;
   required('#cart-view').hidden = false;
   required('#dialog-title').textContent = 'Your cart';
-  checkoutButton.focus();
-});
+  (checkoutButton.disabled ? required<HTMLButtonElement>('#close-cart') : checkoutButton).focus();
+}
+required<HTMLButtonElement>('#back-to-cart').addEventListener('click', showCartReview);
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const input = {
@@ -289,11 +296,32 @@ dialog.addEventListener('close', () => {
 });
 window.addEventListener('storage', (event) => {
   if (event.key !== STORAGE_KEY && event.key !== null) return;
-  cart = readCart(event.newValue);
+  let next: Cart;
+  try {
+    if (event.storageArea !== localStorage) return;
+    // Queued notifications can describe an older value; synchronize to the
+    // current local-storage record instead of replaying the event snapshot.
+    next = readCart(localStorage.getItem(STORAGE_KEY));
+  } catch {
+    storageAvailable = false;
+    updateStorageNote();
+    return;
+  }
+  if (products.every((product) => next[product.id] === cart[product.id])) return;
+  cart = next;
   renderCart();
-  renderCatalog();
+  updateCatalogCartControls();
+  if (!form.hidden) {
+    if (itemCount(cart) === 0) {
+      dialog.close();
+      announce('Cart cleared in another tab. Demo checkout cancelled.');
+    } else {
+      showCartReview();
+      announce('Cart changed in another tab. Review your cart before continuing.');
+    }
+    return;
+  }
   announce('Cart updated from another tab.');
-  if (itemCount(cart) === 0 && !form.hidden) dialog.close();
 });
 persist();
 renderCatalog();

@@ -17,6 +17,7 @@ test('keeps catalog keyboard focus during real cross-tab cart updates', async ({
   await other.goto('./');
   await other.getByRole('button', { name: 'Add Arc desk lamp to cart' }).click();
   await expect(page.getByRole('button', { name: 'Open cart, 1 items' })).toBeVisible();
+  await page.bringToFront();
   await expect(add).toBeFocused();
   await other.evaluate((storageKey) => {
     localStorage.setItem(
@@ -44,6 +45,7 @@ test('requires cart review after another tab changes a checkout', async ({ page,
     page.getByRole('heading', { name: 'Arc desk lamp', exact: true }).last(),
   ).toBeVisible();
   await expect(page.locator('#cart-status')).toContainText('Review your cart');
+  await page.bringToFront();
   await expect(page.getByRole('button', { name: /Continue to demo checkout/ })).toBeFocused();
   await other.close();
 });
